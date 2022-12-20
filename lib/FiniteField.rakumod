@@ -1,7 +1,5 @@
 unit module FiniteField;
 
-my $*modulus;
-
 multi postfix:<⁻¹>(UInt $n) returns UInt is export {
   my ($i, $h, $v, $d) = $*modulus, $n, 0, 1;
   repeat {

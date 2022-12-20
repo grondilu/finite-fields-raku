@@ -2,7 +2,7 @@
      "perl":  "6.*",
      "name" : "FiniteFields",
      "license" : "Artistic-2.0",
-     "version" : "0.3.0",
+     "version" : "0.3.1",
      "description" : "Finite Fields in raku",
      "provides" : {
 	"FiniteField": "lib/FiniteField.rakumod"
