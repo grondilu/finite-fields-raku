@@ -2,12 +2,13 @@
      "perl":  "6.*",
      "name" : "FiniteFields",
      "license" : "Artistic-2.0",
-     "version" : "0.2.0",
+     "version" : "0.3.0",
      "description" : "Finite Fields in raku",
      "provides" : {
 	"FiniteField": "lib/FiniteField.rakumod"
      },
-     "author" : "grondilu",
+     "author" : "Lucien Grondin",
+     "auth" : "zef:grondilu",
      "depends" : [ ],
      "source-url" : "git@github.com:grondilu/finite-fields-raku.git"
  }
