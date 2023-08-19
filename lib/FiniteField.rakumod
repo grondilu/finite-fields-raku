@@ -17,7 +17,7 @@ multi postfix:<⁻¹>(UInt $n) returns UInt is export {
 multi infix:</>(Int $a, UInt $b) returns UInt is export { $a*$b⁻¹ mod $*modulus }
 
 {
-  multi infix:<==>(UInt $a, UInt $b)          is export { callwith $a - $b, 0 }
+  multi infix:<==>(UInt $a, UInt $b)          is export { callwith ($a - $b) mod $*modulus, 0 }
   multi infix:<+> (UInt $a, UInt $b --> UInt) is export { callsame() mod $*modulus }
   multi infix:<*> (UInt $a, UInt $b --> UInt) is export { callsame() mod $*modulus }
   multi infix:<**>(UInt $a, UInt $b --> UInt) is export { expmod $a, $b, $*modulus }
@@ -26,4 +26,5 @@ multi infix:</>(Int $a, UInt $b) returns UInt is export { $a*$b⁻¹ mod $*modul
     multi prefix:<->(UInt $n          --> UInt) is export { callsame() mod $*modulus }
     multi infix:<-> (UInt $a, UInt $b --> UInt) is export { callsame() mod $*modulus }
   }
+
 }
