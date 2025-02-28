@@ -1,4 +1,4 @@
-[![SparrowCI](https://ci.sparrowhub.io/project/gh-grondilu-finite-fields-raku/badge)](https://ci.sparrowhub.io)
+![Sparky](https://sparky.sparrowhub.io/badge/grondilu-finite-fields-raku?foo=bar)
 
 # Finite Fields Aritmetics in raku
 
